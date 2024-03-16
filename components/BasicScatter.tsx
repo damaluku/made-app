@@ -168,7 +168,7 @@ const data = [
 export default function BasicScatter() {
   return (
     <ScatterChart
-      width={600}
+      width={400}
       height={300}
       series={[
         {

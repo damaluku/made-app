@@ -47,16 +47,21 @@ export default function Home() {
         </Grid>
       </Grid>
 
-      <Grid container gap={3}>
-        <Grid item>
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+        paddingBottom={2}
+      >
+        <Grid item xs={12} sm={4} md={4}>
           <SimpleAreaChart />
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={4} md={4}>
           <BasicLineChart />
         </Grid>
-        {/* <Grid item>
+        <Grid item xs={12} sm={4} md={4}>
           <BasicScatter />
-        </Grid> */}
+        </Grid>
       </Grid>
     </>
   );
