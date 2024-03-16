@@ -35,9 +35,9 @@ const navItems = [
   "dashboard",
   "library",
   "transit",
-  "gym",
+  // "gym",
   "wallet",
-  "profile",
+  // "profile",
 ];
 
 export default function NavBar(props: Props) {
