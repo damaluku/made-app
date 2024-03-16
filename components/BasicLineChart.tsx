@@ -8,6 +8,7 @@ export default function BasicLineChart() {
       series={[
         {
           data: [2, 5.5, 2, 8.5, 1.5, 5],
+          label: "Attendance",
         },
       ]}
       width={500}

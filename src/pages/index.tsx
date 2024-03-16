@@ -47,16 +47,16 @@ export default function Home() {
         </Grid>
       </Grid>
 
-      <Grid container>
+      <Grid container gap={3}>
         <Grid item>
           <SimpleAreaChart />
         </Grid>
         <Grid item>
           <BasicLineChart />
         </Grid>
-        <Grid item>
+        {/* <Grid item>
           <BasicScatter />
-        </Grid>
+        </Grid> */}
       </Grid>
     </>
   );
