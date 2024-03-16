@@ -7,11 +7,10 @@ export default function BasicLineChart() {
       xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
       series={[
         {
-          data: [2, 5.5, 2, 8.5, 1.5, 5],
+          data: [5, 5, 5, 5, 1, 5],
           label: "Attendance",
         },
       ]}
-      width={400}
       height={300}
     />
   );

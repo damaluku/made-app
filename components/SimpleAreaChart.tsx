@@ -15,7 +15,6 @@ const xLabels = [
 export default function SimpleAreaChart() {
   return (
     <LineChart
-      width={400}
       height={300}
       series={[{ data: uData, label: "Library", area: true, showMark: false }]}
       xAxis={[{ scaleType: "point", data: xLabels }]}

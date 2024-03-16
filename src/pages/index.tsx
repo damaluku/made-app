@@ -41,8 +41,8 @@ export default function Home() {
             title="Attendance"
             key1="Attended"
             key2="Absent"
-            value1={`${10}`}
-            value2={`${2}`}
+            value1={`${5}`}
+            value2={`${1}`}
           />
         </Grid>
       </Grid>
@@ -53,14 +53,11 @@ export default function Home() {
         columns={{ xs: 4, sm: 8, md: 12 }}
         paddingBottom={2}
       >
-        <Grid item xs={12} sm={4} md={4}>
-          <SimpleAreaChart />
-        </Grid>
-        <Grid item xs={12} sm={4} md={4}>
+        <Grid item xs={12} sm={6}>
           <BasicLineChart />
         </Grid>
-        <Grid item xs={12} sm={4} md={4}>
-          <BasicScatter />
+        <Grid item xs={12} sm={6}>
+          <SimpleAreaChart />
         </Grid>
       </Grid>
     </>
