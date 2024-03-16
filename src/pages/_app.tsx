@@ -100,22 +100,10 @@ export default function MyApp(props: MyAppProps) {
         <title>
           Made {router.pathname == "/" ? "" : router.pathname.toString()}
         </title>
-        <meta name="Made" content="Made" />
         <meta
           name="description"
-          content="This is a portfolio website for Damian Aluku, a front-end developer with experience in ReactJS, NextJS, and various front-end technologies."
+          content="This is a demo site for an improved student interface"
         />
-        <meta
-          name="keywords"
-          content="React, ReactJS, NextJS, TypeScript, Frontend Developer, Javascript, HTML, CSS, Software engineer, Vue, Material UI, NextUI, Styled-components, development"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="English" />
-        {/*   <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        /> */}
       </Head>
       <CacheProvider value={emotionCache}>
         <ThemeProvider theme={selectedTheme}>
