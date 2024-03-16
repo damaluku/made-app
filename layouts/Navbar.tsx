@@ -57,7 +57,7 @@ export default function NavBar(props: Props) {
         textTransform="uppercase"
         sx={{ my: 2 }}
       >
-        Made
+        Made-app
       </Typography>
       <Divider />
       <List>
@@ -105,7 +105,7 @@ export default function NavBar(props: Props) {
             textTransform="uppercase"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Made
+            Made-app
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (

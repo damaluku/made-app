@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import DashboardCard from "components/DashboardCard";
 import SimpleAreaChart from "components/SimpleAreaChart";
 import BasicLineChart from "components/BasicLineChart";
@@ -12,6 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+      <Typography variant="h2" textTransform="uppercase" marginBottom={4}>
+        John Carter
+      </Typography>
+
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}

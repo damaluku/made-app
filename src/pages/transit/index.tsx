@@ -1,6 +1,7 @@
 import { Box, Button, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
+import Link from "next/link";
 
 const Transit = () => {
   return (
@@ -38,7 +39,9 @@ const Transit = () => {
       <Divider sx={{ margin: "2rem 0" }} />
       <Stack flexDirection="row" justifyContent="center">
         <Box>
-          <Button variant="outlined">Add rides</Button>
+          <Button variant="outlined" LinkComponent={Link} href="/wallet">
+            Add rides
+          </Button>
         </Box>
       </Stack>
     </Box>
