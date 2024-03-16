@@ -54,12 +54,13 @@ const Library = () => {
 
   return (
     <>
-      <Stack>
-        <Typography variant="h3">Current</Typography>
+      <Stack rowGap={2}>
+        <Typography variant="h3">Active</Typography>
         <DataGridCurrent rows={current} />
       </Stack>
       <br />
-      <Stack>
+      <br />
+      <Stack rowGap={2}>
         <Typography variant="h3">History</Typography>
         <DataGridReturned rows={returned} />
       </Stack>

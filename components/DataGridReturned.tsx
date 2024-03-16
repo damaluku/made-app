@@ -6,7 +6,7 @@ const columns: GridColDef[] = [
   {
     field: "id",
     headerName: "ID",
-    width: 60,
+    width: 80,
   },
   {
     field: "date",
@@ -17,7 +17,7 @@ const columns: GridColDef[] = [
   {
     field: "bookName",
     headerName: "Book name",
-    width: 150,
+    width: 100,
     editable: false,
   },
   {
@@ -30,7 +30,7 @@ const columns: GridColDef[] = [
     field: "returnedDate",
     headerName: "Returned Date",
     // type: "date",
-    width: 150,
+    width: 100,
   },
 ];
 
@@ -40,21 +40,19 @@ interface Props {
 
 export default function DataGridReturned({ rows }: Props) {
   return (
-    <Box sx={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: {
-              pageSize: 5,
-            },
+    <DataGrid
+      rows={rows}
+      columns={columns}
+      initialState={{
+        pagination: {
+          paginationModel: {
+            pageSize: 5,
           },
-        }}
-        pageSizeOptions={[5]}
-        checkboxSelection
-        disableRowSelectionOnClick
-      />
-    </Box>
+        },
+      }}
+      pageSizeOptions={[5]}
+      // checkboxSelection
+      disableRowSelectionOnClick
+    />
   );
 }

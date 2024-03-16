@@ -27,7 +27,7 @@ export default function Home() {
             title="Library"
             key1="Times Visited"
             key2="books used"
-            value1={`${2}`}
+            value1={`${7}`}
             value2={`${5}`}
           />
         </Grid>
